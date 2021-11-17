@@ -25,7 +25,10 @@ body{
 
 .calc__container{
   width: 90%;
+  max-width: 500px;
+
   height: 90%;
+  max-height: 800px;
 
   border-radius: 2rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
@@ -80,9 +83,15 @@ body{
   font-size: 2.7rem;
   color: rgb(66, 66, 66);
 
+  /* border: 1px solid rgba(0, 0, 0, .05); */
+
   cursor: pointer;
 }
 .clear{
   background-color: rgba(243, 176, 51, 0.63);
   font-size: 4rem;
+}
+.equal{
+  background-color: rgba(243, 176, 51, 0.63);
+  border-radius: 1rem 1rem 0 0;
 }

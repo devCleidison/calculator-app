@@ -30,6 +30,7 @@ function getKeyPress(key) {
     operation = keyPress;
     showOperation(operation);
   } else if (keyPress === "=") {
+    finished = true
     showResults(operation);
   } else if (keyPress === "1") {
     if (operation === null) {
@@ -155,7 +156,7 @@ function multiplay(num1, num2) {
   return num1 * num2;
 }
 function divide(num1, num2) {
-  return num1 / num2;
+  return (num1 / num2).toFixed(2);
 }
 
 function showResults(op) {
