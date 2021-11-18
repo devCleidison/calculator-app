@@ -17,94 +17,17 @@ function getKeyPress(key) {
 
   if (keyPress === "C") {
     clearCalcs();
-  } else if (keyPress === "+") {
-    operation = keyPress;
-    showOperation(operation);
-  } else if (keyPress === "-") {
-    operation = keyPress;
-    showOperation(operation);
-  } else if (keyPress === "x") {
-    operation = keyPress;
-    showOperation(operation);
-  } else if (keyPress === "/") {
+  } else if (
+    keyPress === "+" ||
+    keyPress === "-" ||
+    keyPress === "x" ||
+    keyPress === "/"
+  ) {
     operation = keyPress;
     showOperation(operation);
   } else if (keyPress === "=") {
-    finished = true
     showResults(operation);
-  } else if (keyPress === "1") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "2") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "3") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "4") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "5") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "6") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "7") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "8") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "9") {
-    if (operation === null) {
-      number1 += keyPress;
-      showCalc(number1, operation);
-    } else {
-      number2 += keyPress;
-      showCalc(number2, operation);
-    }
-  } else if (keyPress === "0") {
+  } else {
     if (operation === null) {
       number1 += keyPress;
       showCalc(number1, operation);
